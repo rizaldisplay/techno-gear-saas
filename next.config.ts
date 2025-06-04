@@ -1,11 +1,7 @@
-module.exports = {
-  webpack(config: { module: { rules: { test: RegExp; issuer: RegExp; use: string[]; }[]; }; }) {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack'],
-    });
+import type { NextConfig } from "next";
 
-    return config;
-  }
+const nextConfig: NextConfig = {
+  /* config options here */
 };
+
+export default nextConfig;
